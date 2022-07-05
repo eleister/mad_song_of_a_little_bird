@@ -6,9 +6,10 @@ AFRAME.registerComponent('playsound1', {
       
 
       let musicplay = () => {
+      start1.setAttribute("visible", false);
       audiosource.components.sound.playSound()
       }
       
-      this.el.addEventListener('click', musicplay);
+      this.el.addEventListener('click', musicplay,);
 
     }});
